@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{A51EF779-7F44-447F-ACB3-E876B078DE72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample-Api", "Sample-Api\Sample-Api.csproj", "{E4FBC28C-B3AE-4E85-9DBB-241886CD18B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A51EF779-7F44-447F-ACB3-E876B078DE72} = {A51EF779-7F44-447F-ACB3-E876B078DE72}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample-IdentityServer-Client", "Sample-IdentityServer-Client\Sample-IdentityServer-Client.csproj", "{45ED3BBB-A3C9-45B5-8F83-76D806E535CA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A51EF779-7F44-447F-ACB3-E876B078DE72} = {A51EF779-7F44-447F-ACB3-E876B078DE72}
+		{E4FBC28C-B3AE-4E85-9DBB-241886CD18B0} = {E4FBC28C-B3AE-4E85-9DBB-241886CD18B0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A51EF779-7F44-447F-ACB3-E876B078DE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51EF779-7F44-447F-ACB3-E876B078DE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51EF779-7F44-447F-ACB3-E876B078DE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51EF779-7F44-447F-ACB3-E876B078DE72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FBC28C-B3AE-4E85-9DBB-241886CD18B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FBC28C-B3AE-4E85-9DBB-241886CD18B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FBC28C-B3AE-4E85-9DBB-241886CD18B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FBC28C-B3AE-4E85-9DBB-241886CD18B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45ED3BBB-A3C9-45B5-8F83-76D806E535CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45ED3BBB-A3C9-45B5-8F83-76D806E535CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45ED3BBB-A3C9-45B5-8F83-76D806E535CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45ED3BBB-A3C9-45B5-8F83-76D806E535CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77B201AE-48C2-4CDD-B073-F3891BCCF76B}
+	EndGlobalSection
+EndGlobal
